@@ -26,8 +26,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## What is solved here
 
-You have no request headers for the user timezone or it color scheme preference.
-If you want to use one of this, you can only access that client side and you will have hydration issues: server side rendered content will be different from the client side rendered one.
+You have no request headers for the user time zone or it color scheme preference.
+If you want to use one of this, you can only access that client side and you will have hydration issues: server side rendered content will be different from the client side rendered one (for example, a date that is different on the server than on the client).
 
 ## How to use it
 Just copy/paste the [src/utils](src/utils) folder in your project and use the `ClientHintsProvider` and `UserPreferencesProvider` in your root layout.
